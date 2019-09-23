@@ -94,6 +94,14 @@ to make remote interactions look like local method calls.
 Warnings about `TypedActor` have been [mentioned in documentation](https://doc.akka.io/docs/akka/2.5/typed-actors.html#when-to-use-typed-actors)
 for many years.
 
+### AkkaSslConfig
+
+`AkkaSslConfig` has been deprecated in favor of setting up TLS with `javax.net.ssl.SSLEngine` directly.
+
+This also means that methods Akka Streams `TLS` and `Tcp` that take `SSLContext` or `AkkaSslConfig` have been
+deprecated and replaced with corresponding methods that takes a factory function for creating the `SSLEngine`.
+
+See documentation of @ref:[streaming IO with TLS](../stream/stream-io.md#tls).    
 
 ### akka.Main
 
