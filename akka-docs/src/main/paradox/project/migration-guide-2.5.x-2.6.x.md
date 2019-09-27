@@ -91,6 +91,10 @@ to make remote interactions look like local method calls.
 Warnings about `TypedActor` have been [mentioned in documentation](https://doc.akka.io/docs/akka/2.5/typed-actors.html#when-to-use-typed-actors)
 for many years.
 
+### JavaLogger
+
+`akka.event.jul.JavaLogger` for integration with `java.util.logging` has been deprecated. Use SLF4J instead,
+which also has support for `java.util.logging`.
 
 @@ Remoting
 
